@@ -54,17 +54,7 @@ const UserPage = ({ params }: { params: { username: string } }) => {
                     </div>
                 </div>
             </section>
-            <div className="flex justify-evenly mb-4">
-                <div className="cursor-pointer border-b-2 border-blue-400"> Mensajes</div>
-                <div className="cursor-pointer"> Respuestas</div>
-            </div>
-            <div>
-                {user.message.map((message, index) =>
-                    <Message key={index} message={message}/>
-                        
-                    )}
-
-            </div>
+           
         </main>
     )
 }
